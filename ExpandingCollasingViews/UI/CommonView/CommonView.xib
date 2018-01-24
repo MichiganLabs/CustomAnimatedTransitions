@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonView" customModule="ExpandingCollasingViews" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="335"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc" translatesAutoresizingMaskIntoConstraints="NO" id="kOZ-ec-yO1" userLabel="Background Image">
+                    <rect key="frame" x="-76.5" y="-82.5" width="500" height="500"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="lAs-1f-nRw"/>
+                        <constraint firstAttribute="height" constant="500" id="uLj-3c-DwS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW TRENDING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blT-rM-rN0" userLabel="Subtitle">
+                    <rect key="frame" x="16" y="16" width="126.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="0.55399925595238086" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Join the Developers of WWDC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sc-Ca-ZkQ" userLabel="Title">
+                    <rect key="frame" x="16" y="43.5" width="315" height="67"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75251100352112676" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="The event brings together creators and dreamers of all ages." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-uB-lQj" userLabel="Blurb">
+                    <rect key="frame" x="16" y="280.5" width="315" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.553999256" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6sc-Ca-ZkQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="1aY-9x-7Mw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6sc-Ca-ZkQ" secondAttribute="trailing" constant="16" id="2Td-j7-Wtf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eZY-uB-lQj" secondAttribute="bottom" constant="16" id="3ET-G9-p90"/>
+                <constraint firstItem="blT-rM-rN0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="AAH-xy-mSm"/>
+                <constraint firstItem="6sc-Ca-ZkQ" firstAttribute="top" secondItem="blT-rM-rN0" secondAttribute="bottom" constant="8" id="Epv-TZ-5AE"/>
+                <constraint firstItem="kOZ-ec-yO1" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ieq-A6-UuQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eZY-uB-lQj" secondAttribute="trailing" constant="16" id="PS9-I0-YBK"/>
+                <constraint firstItem="blT-rM-rN0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="VzC-4m-fw3"/>
+                <constraint firstItem="kOZ-ec-yO1" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="XmL-KV-vrB"/>
+                <constraint firstItem="eZY-uB-lQj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="pGu-KK-ufp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="73.5" y="104.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wwdc" width="3210" height="2156"/>
+    </resources>
+</document>

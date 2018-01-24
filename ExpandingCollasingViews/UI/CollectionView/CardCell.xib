@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="QnQ-m1-Xo4" customClass="CardCell" customModule="ExpandingCollasingViews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKe-Hg-OBm" userLabel="Shadow View" customClass="ShadowView" customModule="ExpandingCollasingViews" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="275"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opY-KQ-V3h" customClass="CommonView" customModule="ExpandingCollasingViews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="311" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="opY-KQ-V3h" firstAttribute="leading" secondItem="eKe-Hg-OBm" secondAttribute="leading" id="iL6-vc-909"/>
+                            <constraint firstAttribute="trailing" secondItem="opY-KQ-V3h" secondAttribute="trailing" id="iea-TH-CQ6"/>
+                            <constraint firstAttribute="bottom" secondItem="opY-KQ-V3h" secondAttribute="bottom" id="niz-K6-mqp"/>
+                            <constraint firstItem="opY-KQ-V3h" firstAttribute="top" secondItem="eKe-Hg-OBm" secondAttribute="top" id="ql3-U8-Pwy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eKe-Hg-OBm" secondAttribute="bottom" id="0FG-G9-xGJ"/>
+                <constraint firstItem="eKe-Hg-OBm" firstAttribute="top" secondItem="QnQ-m1-Xo4" secondAttribute="top" id="Pr0-FQ-wsS"/>
+                <constraint firstAttribute="trailing" secondItem="eKe-Hg-OBm" secondAttribute="trailing" id="Slw-iF-kWq"/>
+                <constraint firstItem="eKe-Hg-OBm" firstAttribute="leading" secondItem="QnQ-m1-Xo4" secondAttribute="leading" id="oMS-Nz-NT8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CI3-KG-8sA"/>
+            <size key="customSize" width="311" height="275"/>
+            <connections>
+                <outlet property="commonView" destination="opY-KQ-V3h" id="LB7-Ds-o2D"/>
+            </connections>
+            <point key="canvasLocation" x="-270" y="-27"/>
+        </collectionViewCell>
+    </objects>
+</document>
