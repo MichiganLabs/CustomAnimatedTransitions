@@ -3,6 +3,8 @@ import UIKit
 class CollectionViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
+    fileprivate var selectedCell: UICollectionViewCell?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,7 +40,19 @@ extension CollectionViewController: UICollectionViewDataSource {
 
 extension CollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedCell = self.collectionView.cellForItem(at: indexPath)
+
         let vc = DetailViewController.instantiate()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension CollectionViewController: Animatable {
+    var containerView: UIView? {
+        return self.collectionView
+    }
+
+    var childView: UIView? {
+        return self.selectedCell
     }
 }

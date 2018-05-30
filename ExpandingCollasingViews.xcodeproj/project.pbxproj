@@ -25,6 +25,8 @@
 		15BC18341F8E80BE00FA6AF4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC18331F8E80BE00FA6AF4 /* DetailViewController.swift */; };
 		15BC18361F8E80E200FA6AF4 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC18351F8E80E200FA6AF4 /* StoryboardBased.swift */; };
 		15BC18381F8E8CFD00FA6AF4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC18371F8E8CFD00FA6AF4 /* NavigationController.swift */; };
+		15EC5F4620BF2C4E0090F6E7 /* CustomTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC5F4520BF2C4E0090F6E7 /* CustomTransitionAnimation.swift */; };
+		15EC5F4820BF2CE90090F6E7 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC5F4720BF2CE90090F6E7 /* Animatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		15BC18331F8E80BE00FA6AF4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		15BC18351F8E80E200FA6AF4 /* StoryboardBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
 		15BC18371F8E8CFD00FA6AF4 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		15EC5F4520BF2C4E0090F6E7 /* CustomTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionAnimation.swift; sourceTree = "<group>"; };
+		15EC5F4720BF2CE90090F6E7 /* Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				150F95F620AC7FBD0098D1A8 /* UI */,
+				15EC5F4420BF2C280090F6E7 /* TransitionAnimations */,
 				15B61A252018D95300CF894F /* Reusables */,
 				1580DA0E1F8E6D53001F95CD /* LaunchScreen.storyboard */,
 				1580DA091F8E6D53001F95CD /* Main.storyboard */,
@@ -141,6 +146,15 @@
 				150F95F720AC80180098D1A8 /* ShadowView.swift */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		15EC5F4420BF2C280090F6E7 /* TransitionAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				15EC5F4520BF2C4E0090F6E7 /* CustomTransitionAnimation.swift */,
+				15EC5F4720BF2CE90090F6E7 /* Animatable.swift */,
+			);
+			path = TransitionAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +238,12 @@
 				15BC18321F8E7A4200FA6AF4 /* CommonView.swift in Sources */,
 				15BC18341F8E80BE00FA6AF4 /* DetailViewController.swift in Sources */,
 				150F95F820AC80180098D1A8 /* ShadowView.swift in Sources */,
+				15EC5F4620BF2C4E0090F6E7 /* CustomTransitionAnimation.swift in Sources */,
 				15B61A212018D3E700CF894F /* Reusable.swift in Sources */,
 				1580DA061F8E6D53001F95CD /* AppDelegate.swift in Sources */,
 				15B61A232018D40200CF894F /* NibLoadable.swift in Sources */,
 				15B61A1D2018CF1000CF894F /* CardCell.swift in Sources */,
+				15EC5F4820BF2CE90090F6E7 /* Animatable.swift in Sources */,
 				15B61A1F2018D3CC00CF894F /* UICollectionView+Reusable.swift in Sources */,
 				15BC18361F8E80E200FA6AF4 /* StoryboardBased.swift in Sources */,
 			);
