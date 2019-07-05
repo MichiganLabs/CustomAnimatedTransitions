@@ -60,6 +60,10 @@ extension DetailViewController: Animatable {
         // Redraw the view to update the previous changes
         self.view.layoutIfNeeded()
 
+        // Push the content of the common view down to stay within the safe area insets
+        let safeAreaTop = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? .zero
+        self.commonView.topConstraintValue = safeAreaTop + 16
+
         // Animate the common view to a height of 500 points
         self.heightConstraint.constant = 500
         sizeAnimator.addAnimations {
@@ -90,6 +94,9 @@ extension DetailViewController: Animatable {
             // Still want to animate the common view getting pinned to the top of the view
             self.topConstraint.constant = 0
         }
+
+        // Common view does not need to worry about the safe area anymore. Just restore the original value.
+        self.commonView.topConstraintValue = 16
 
         // Animate the height of the common view to be the same size as the TO frame.
         // Also animate hiding the close button
